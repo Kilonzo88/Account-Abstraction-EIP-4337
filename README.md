@@ -1,66 +1,54 @@
-## Foundry
+Here's the updated README with the MIT License information added:
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+# Account Abstraction EIP-4337 Project
 
-Foundry consists of:
+## Overview
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+This project demonstrates the cutting-edge implementation of Account Abstraction across Ethereum Layer 1 and ZkSync Layer 2, showcasing a revolutionary approach to blockchain wallet interactions.
 
-## Documentation
+## Key Features
 
-https://book.getfoundry.sh/
+- **Cross-Chain Implementation**: Seamless account abstraction on Ethereum and ZkSync
+- **Flexible Authentication**: Enables smart contract wallets to be signed using familiar authentication methods
+- **Enhanced User Experience**: Simplifies blockchain interactions for developers and end-users
 
-## Usage
+## Technology Stack
 
-### Build
+- **Language**: Solidity
+- **Development Framework**: Foundry
+- **Libraries**: 
+  - OpenZeppelin Contracts
+    - ECDSA for signature recovery
+    - Ownable for ownership management
+    - MessageHashUtils for EIP-191 hash conversion
+- **Version Control**: Git
 
-```shell
-$ forge build
-```
+## Prerequisites
 
-### Test
+- [Install Foundry](https://book.getfoundry.sh/getting-started/installation)
+- [Install Git](https://git-scm.com/downloads)
 
-```shell
-$ forge test
-```
+## Project Structure
 
-### Format
+The project is split into two main components:
+1. Ethereum Layer 1 Implementation
+2. ZkSync Layer 2 Implementation
 
-```shell
-$ forge fmt
-```
+## Target Audience
 
-### Gas Snapshots
+**Developers** looking to create more user-friendly smart contract wallets that leverage familiar authentication mechanisms.
 
-```shell
-$ forge snapshot
-```
+## Future Roadmap
 
-### Anvil
+- Integrate additional authentication methods
+- Potential support for Google and GitHub authentication keys
 
-```shell
-$ anvil
-```
+## Contributing
 
-### Deploy
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+## License
 
-### Cast
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```shell
-$ cast <subcommand>
-```
 
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
